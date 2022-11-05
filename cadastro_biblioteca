@@ -1,0 +1,92 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exercicio01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*//Exercicio: Crie um cadastro de uma biblioteca.
+                    Leia os seguintes dados:
+                    Título
+                    Subtitulo
+                    Autor
+                    Editora
+                    Número de páginas
+                    Data de publicação
+                    Idioma
+                    Após receber os dados, limpe o console e exiba os dados na tela.
+             * Altere o cadastro da biblioteca para exibir os dados na seguinte formatação:
+             * Limpa a tela:
+                Livro cadastrada com sucesso!
+                Livro: Titulo - Subtitulo
+                Autor: Nome do autor
+                Editora: Editora
+                Detalhes: Publicado em 15/07/2001 com 99 páginas em Português.
+            */
+
+            /* Console.WriteLine("------ Cadastro Biblioteca ------");
+             Console.WriteLine();
+             Console.WriteLine("Digite o título do livro: ");
+             string titulo = Console.ReadLine();
+             Console.WriteLine("Digite o subtítulo do livro: ");
+             string subtitulo = Console.ReadLine();
+             Console.WriteLine("Digite o autor do livro: ");
+             string autor = Console.ReadLine();
+             Console.WriteLine("Digite o editora do livro: ");
+             string editora = Console.ReadLine();
+             Console.WriteLine("Digite o numero de páginas do livro: ");
+             int numP = int.Parse(Console.ReadLine());
+             Console.WriteLine("Digite a data de publicação do livro: ");
+             DateTime dataPubli = DateTime.Parse(Console.ReadLine());
+
+             Console.WriteLine("Digite o idioma do livro: ");
+             string idioma = Console.ReadLine();
+
+             Console.Clear();
+
+             Console.WriteLine("---------------------");
+             Console.WriteLine();
+             Console.WriteLine(titulo);
+             Console.WriteLine(subtitulo);
+             Console.WriteLine(autor);
+             Console.WriteLine(editora);
+             Console.WriteLine(dataPubli);
+             Console.WriteLine(idioma);
+
+             Abaixo segue alteração do cadastro
+             */
+            Console.WriteLine("------ Cadastro Biblioteca ------");
+            Console.WriteLine();
+            Console.WriteLine("Digite o título do livro: ");
+            string titulo = Console.ReadLine();
+            Console.WriteLine("Digite o subtítulo do livro: ");
+            string subtitulo = Console.ReadLine();
+            Console.WriteLine("Digite o autor do livro: ");
+            string autor = Console.ReadLine();
+            Console.WriteLine("Digite o editora do livro: ");
+            string editora = Console.ReadLine();
+            Console.WriteLine("Digite o numero de páginas do livro: ");
+            int numP = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a data de publicação do livro: ");
+            string dataPubli = Console.ReadLine();
+            DateTime dataPublicacao = DateTime.Parse(dataPubli);
+
+            Console.WriteLine("Digite o idioma do livro: ");
+            string idioma = Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("------- Livro cadastrado com sucesso -------");
+            Console.WriteLine();
+            Console.WriteLine($"Livro: {titulo} - {subtitulo}");
+            Console.WriteLine($"Autor: {autor}");
+            Console.WriteLine($"Editora: {editora}");
+            Console.WriteLine($"Detalhes: Publicado em {dataPubli} com {numP} páginas em {idioma}.");
+        }
+    }
+}
