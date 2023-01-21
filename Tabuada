@@ -1,0 +1,20 @@
+using System;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        {
+            Console.WriteLine("Digite um número para consultar sua tabuada");
+            int numeroDigitado = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} X {1} = {2}", numeroDigitado, i, (numeroDigitado * i));
+            }
+
+            Console.WriteLine("Fim do Programa!");
+
+        }
+    }
+}
